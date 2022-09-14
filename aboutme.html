@@ -41,11 +41,31 @@
             <td>Agonda</td>
             <td>4 hours</td>
         </tr>
-    
-    
-    
-    
     </table>
+
+        <hr>
+        <h1>Code Snippet</h1>
+
+        <blockquote>Exclude category from this loop - <a href="https://stackoverflow.com/questions/57672397/exclude-category-from-this-loop">
+            <i>stackoverflow</i>
+        </a></blockquote>
+
+        <pre>
+            &lt;?php query_posts('cat=-3'); ?&gt;
+
+            &lt;?php if (have_posts()) : ?&gt;
+            &lt;?php while (have_posts()) : the_post(); ?&gt;
+              <h3></h3>	
+              <p>&lt;?php the_time('F jS, Y') ?&gt;</p>
+              &lt;?php the_content(); ?&gt;
+            &lt;?php endwhile; ?&gt;
+        </pre>
+
+    
+    
+    
+    
+    
  
   
     
